@@ -50,12 +50,12 @@
                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                   <ul class="list-unstyled navbar-nav">
                      <li class="nav-item dropdown">
-                        <a href="index.php" class="nav-link dropdown-toggle" data-toggle="dropdown"  id="home-menu">Menus</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="home-menu">Menus</a>
 
                         <div class="dropdown-menu">
-                           <a href="index.php" class="dropdown-item" id="home-menu">Home</a>
+                           <a href="/mundogeek/home/" class="dropdown-item text-dark">Home</a>
 
-                           <a href="noticias-geek.php" class="dropdown-item" id="about-menu">Blog News</a>
+                           <a href="/mundogeek/blog-news/" class="dropdown-item text-dark">Blog News</a>
                         </div>
                      </li>                   
 

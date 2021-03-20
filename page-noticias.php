@@ -1,3 +1,7 @@
+<?php
+// Template Name: Noticias
+?>
+
 <?php get_header(); ?>  
    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <main>
@@ -14,7 +18,7 @@
                      <div class="prim-col col col-md-12 col-lg-6 d-none d-md-flex">
                         <ul class="list-unstyled">
                            <li class="media news zoom">
-                              <img src="./assets/img/media/cruella-new2.png" class="align-self-center mr-3" alt="Cruella">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/cruella-new2.png" class="align-self-center mr-3" alt="Cruella">
 
                               <div class="media-body">
                                  <span class="sub-img fm">Filmes</span>
@@ -27,7 +31,7 @@
                            </li>
                            
                            <li class="media news my-3 zoom">
-                              <img src="./assets/img/media/mortal-kombat-new.png" class="align-self-center mr-3" alt="Mortal Kombat">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/mortal-kombat-new.png" class="align-self-center mr-3" alt="Mortal Kombat">
 
                               <div class="media-body">
                                  <span class="sub-img fm">Filmes</span>
@@ -43,7 +47,7 @@
                            </li>
 
                            <li class="media news zoom">
-                              <img src="./assets/img/media/godzila-kong-new.png" class="align-self-center mr-3" alt="Godzilla vs Kong">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/godzila-kong-new.png" class="align-self-center mr-3" alt="Godzilla vs Kong">
 
                               <div class="media-body">
                                  <span class="sub-img fm">Filmes</span>
@@ -62,7 +66,7 @@
                      <div class="second-col col-lg-6 d-none d-lg-flex">
                         <ul class="list-unstyled">
                            <li class="media news zoom">
-                              <img src="./assets/img/media/Rectangle 752.png" class="align-self-center mr-3" alt="Pedro Pascal">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/Rectangle 752.png" class="align-self-center mr-3" alt="Pedro Pascal">
 
                               <div class="media-body">
                                  <span class="sub-img bg-">Séries</span>
@@ -75,7 +79,7 @@
                            </li>
                            
                            <li class="media news my-3 zoom">
-                              <img src="./assets/img/media/constantine-new.png" class="align-self-center mr-3" alt="...">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/constantine-new.png" class="align-self-center mr-3" alt="...">
 
                               <div class="media-body">
                                  <span class="sub-img">Séries</span>
@@ -89,7 +93,7 @@
                            </li>
 
                            <li class="media news zoom">
-                              <img src="./assets/img/media/falcao-soldado-new.png" class="align-self-center mr-3" alt="...">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/falcao-soldado-new.png" class="align-self-center mr-3" alt="...">
 
                               <div class="media-body">
                                  <span class="sub-img">Séries</span>
@@ -131,7 +135,7 @@
                      <div class="col-sm-12 prim-col">
                         <ul class="list-unstyled">
                            <li class="my-2 sm-media text-center news zoom">
-                              <img src="./assets/img/media/cruella-new2.png" class="cruela-img" alt="Cruella">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/cruella-new2.png" class="cruela-img" alt="Cruella">
 
                               <div class="sm-body">
                                  <!-- <span class="sub-img fm">Filmes</span> -->
@@ -146,7 +150,7 @@
                            <hr class="my-3">
 
                            <li class="sm-media text-center news zoom">
-                              <img src="./assets/img/media/mortal-kombat-new.png" class="align-self-center" alt="Mortal Kombat">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/mortal-kombat-new.png" class="align-self-center" alt="Mortal Kombat">
 
                               <div class="sm-body">
                                  <!-- <span class="sub-img fm">Filmes</span> -->
@@ -164,7 +168,7 @@
                            <hr class="my-3">
 
                            <li class="sm-media text-center news zoom">
-                              <img src="./assets/img/media/godzila-kong-new.png" class="align-self-center" alt="Godzilla vs Kong">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/godzila-kong-new.png" class="align-self-center" alt="Godzilla vs Kong">
 
                               <div class="sm-body">
                                  <!-- <span class="sub-img fm">Filmes</span> -->
@@ -194,14 +198,14 @@
             <div class="row">
                <div class="col-md-6 d-sm-4">
                   <div class="media my-4">
-                     <img src="./assets/img/media/usuario.png" class="mr-3" alt="Usuario">
+                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/usuario.png" class="mr-3" alt="Usuario">
                      <div class="media-body">
                         <h5 class="mt-0 usuario-name">She ra</h5>
                         <p>Ameei as noticias, o conteúdo está incrivel... a escolha do Pedro foi ótima, morreno pra ter ele em mais um papel que adoro!</p>
                   
                         <div class="media mt-3">
                            <a class="mr-3" href="#">
-                           <img src="./assets/img/media/usuario.png" alt="Usuario">
+                           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/usuario.png" alt="Usuario">
                            </a>
                            <div class="media-body">
                            <h5 class="mt-0 usuario-name">Baião de três</h5>
@@ -214,7 +218,7 @@
                   
                   <div class="col-md-6 d-sm-4">
                      <div class="media my-4">
-                        <img src="./assets/img/media/usuario.png" class="mr-3" alt="Usuario">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/usuario.png" class="mr-3" alt="Usuario">
                         
                         <div class="media-body">
                            <h5 class="mt-0 usuario-name">She ra</h5>
@@ -222,7 +226,7 @@
                      
                            <div class="media mt-3">
                               <a class="mr-3" href="#">
-                                 <img src="./assets/img/media/usuario.png" alt="Usuario">
+                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/usuario.png" alt="Usuario">
                               </a>
 
                               <div class="media-body">
