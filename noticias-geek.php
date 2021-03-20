@@ -1,4 +1,5 @@
-<?php get_header(); ?>
+<?php get_header(); ?>  
+   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <main>
          <!-- NEWS MEDIA -->
          <section id="news-main">
@@ -236,4 +237,6 @@
             </div>
          </section>
       </main>
+   <?php endwhile; else: endif; ?>
+      
 <?php get_footer(); ?>
