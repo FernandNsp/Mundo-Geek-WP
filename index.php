@@ -1,3 +1,4 @@
+<?php get_header(); ?>      
       <main>
          <!-- SLIDERS -->
          <section class="container-fluid">
@@ -334,3 +335,4 @@
             </div>
          </div>
       </main>
+<?php get_footer(); ?>

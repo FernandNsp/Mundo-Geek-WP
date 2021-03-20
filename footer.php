@@ -52,5 +52,9 @@
       </footer>
 
       <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/scripts.js"></script>
+
+      <!-- Footer wordPress-->
+      <?php wp_footer(); ?>
+      <!-- Fecha footer wordPress-->
    </body>
 </html>
