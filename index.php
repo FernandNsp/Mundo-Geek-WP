@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Mundo Geek</title>
-      <link rel="shortcut icon" href="./assets/img/logo/spider.svg" type="image/x-icon">
+      <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo/spider.svg" type="image/x-icon">
 
       <!-- Fonte Roboto -->
       <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,7 +17,7 @@
 
       <!-- Bootstrap -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-      <link rel="stylesheet" href="./assets/css/style.css">
+      <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
       
       <!-- Scripts -->
       <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
@@ -36,7 +36,7 @@
          <div class="container" id="nav-container">
             <nav class="py-1 navbar navbar-expand-lg fixed-top">
                <a href="#" class="navbar-brand">
-                  <img src="./assets/img/logo/logo-mg.svg" alt="Logo Star Wars" id="logo">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo/logo-mg.svg" alt="Logo Star Wars" id="logo">
                </a>
                
                <button type="button" class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,7 +85,7 @@
 
                   <!-- Primeiro Slider -->
                   <div class="carousel-item the-last">
-                     <img src="./assets/img/slider/slider-thelast-hq.png" alt="The Last Of Us" class="d-none d-md-block img-slider slider-last">
+                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/slider/slider-thelast-hq.png" alt="The Last Of Us" class="d-none d-md-block img-slider slider-last">
 
                      <div class="carousel-caption d-md-block">
                         <h3>The Last of us <span class="subtitle-span">American Dreams</span></h3>
@@ -99,7 +99,7 @@
 
                   <!-- Segundo Slider -->
                   <div class="carousel-item spider">
-                     <img src="./assets/img/slider/slider-spider-hq.png" alt="The Last Of Us" class="mx-2 img-slider d-none d-md-block">
+                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/slider/slider-spider-hq.png" alt="The Last Of Us" class="mx-2 img-slider d-none d-md-block">
                      
                      <div class="carousel-caption d-md-block">
                         <h3>Miles Morales<span class="subtitle-span">Spider-Man</span></h3>
@@ -113,7 +113,7 @@
 
                   <!-- Terceiro Slider -->
                   <div class="carousel-item darth">
-                     <img src="./assets/img/slider/slider-darth-hq.png" alt="Star Wars" class="mx-2 img-slider d-none d-md-flex">
+                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/slider/slider-darth-hq.png" alt="Star Wars" class="mx-2 img-slider d-none d-md-flex">
 
                      <div class="carousel-caption d-md-block">
                         <h3 class="h3-sm">Star Wars – Império<span class="subtitle-span">Arco I: Traição</span></h3>
@@ -150,7 +150,7 @@
 
                   <!-- Primeiro  Card -->
                   <div class="col-md-6 col-sm-6 col-lg-3">
-                     <img src="./assets/img/cards/hq-theyellowkid.png" alt="Marvel" class="card-img-top card-img">
+                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/cards/hq-theyellowkid.png" alt="Marvel" class="card-img-top card-img">
 
                      <div class="card-body zoom">
                         <h3 class="card-title">The Yellow Kid</h3>
@@ -160,7 +160,7 @@
 
                   <!-- Segundo Card -->
                   <div class="col-md-6 col-sm-6 col-lg-3">
-                     <img src="./assets/img/cards/hq-marvel.png" alt="Avengers" class="card-img-top card-img">
+                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/cards/hq-marvel.png" alt="Avengers" class="card-img-top card-img">
 
                      <div class="card-body zoom">
                         <h3 class="card-title">Avengers</h3>
@@ -170,7 +170,7 @@
 
                   <!-- Terceiro  Card -->
                   <div class="col-md-6 col-sm-6 col-lg-3">
-                     <img src="./assets/img/cards/hq-starwars.png" alt="Star Wars" class="card-img-top card-img">
+                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/cards/hq-starwars.png" alt="Star Wars" class="card-img-top card-img">
 
                      <div class="card-body zoom">
                         <h3 class="card-title">Star Wars</h3>
@@ -180,7 +180,7 @@
 
                   <!-- Quarto Card -->
                   <div class="col-md-6 col-sm-6 col-lg-3">
-                     <img src="./assets/img/cards/hq-thelast.png" alt="The Last of Us - American Dreams" class="card-img-top card-img">
+                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/cards/hq-thelast.png" alt="The Last of Us - American Dreams" class="card-img-top card-img">
 
                      <div class="card-body zoom">
                         <h3 class="card-title">The Last Of Us</h3>
@@ -204,7 +204,7 @@
                      <div class="prim-col col col-md-12 col-lg-6 d-none d-md-flex">
                         <ul class="list-unstyled">
                            <li class="media news zoom">
-                              <img src="./assets/img/media/cruella-new2.png" class="align-self-center mr-3" alt="Cruella">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/cruella-new2.png" class="align-self-center mr-3" alt="Cruella">
 
                               <div class="media-body">
                                  <span class="sub-img fm">Filmes</span>
@@ -217,7 +217,7 @@
                            </li>
                            
                            <li class="media news my-3 zoom">
-                              <img src="./assets/img/media/mortal-kombat-new.png" class="align-self-center mr-3" alt="Mortal Kombat">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/mortal-kombat-new.png" class="align-self-center mr-3" alt="Mortal Kombat">
 
                               <div class="media-body">
                                  <span class="sub-img fm">Filmes</span>
@@ -233,7 +233,7 @@
                            </li>
 
                            <li class="media news zoom">
-                              <img src="./assets/img/media/godzila-kong-new.png" class="align-self-center mr-3" alt="Godzilla vs Kong">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/godzila-kong-new.png" class="align-self-center mr-3" alt="Godzilla vs Kong">
 
                               <div class="media-body">
                                  <span class="sub-img fm">Filmes</span>
@@ -252,7 +252,7 @@
                      <div class="second-col col-lg-6 d-none d-lg-flex">
                         <ul class="list-unstyled">
                            <li class="media news zoom">
-                              <img src="./assets/img/media/Rectangle 752.png" class="align-self-center mr-3" alt="Pedro Pascal">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/Rectangle 752.png" class="align-self-center mr-3" alt="Pedro Pascal">
 
                               <div class="media-body">
                                  <span class="sub-img bg-">Séries</span>
@@ -265,7 +265,7 @@
                            </li>
                            
                            <li class="media news my-3 zoom">
-                              <img src="./assets/img/media/constantine-new.png" class="align-self-center mr-3" alt="...">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/constantine-new.png" class="align-self-center mr-3" alt="...">
 
                               <div class="media-body">
                                  <span class="sub-img">Séries</span>
@@ -279,7 +279,7 @@
                            </li>
 
                            <li class="media news zoom">
-                              <img src="./assets/img/media/falcao-soldado-new.png" class="align-self-center mr-3" alt="...">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/falcao-soldado-new.png" class="align-self-center mr-3" alt="...">
 
                               <div class="media-body">
                                  <span class="sub-img">Séries</span>
@@ -321,7 +321,7 @@
                      <div class="col-sm-12 prim-col">
                         <ul class="list-unstyled">
                            <li class="my-2 sm-media text-center news zoom">
-                              <img src="./assets/img/media/cruella-new2.png" class="cruela-img" alt="Cruella">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/cruella-new2.png" class="cruela-img" alt="Cruella">
 
                               <div class="sm-body">
                                  <!-- <span class="sub-img fm">Filmes</span> -->
@@ -336,7 +336,7 @@
                            <hr class="my-3">
 
                            <li class="sm-media text-center news zoom">
-                              <img src="./assets/img/media/mortal-kombat-new.png" class="align-self-center" alt="Mortal Kombat">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/mortal-kombat-new.png" class="align-self-center" alt="Mortal Kombat">
 
                               <div class="sm-body">
                                  <!-- <span class="sub-img fm">Filmes</span> -->
@@ -354,7 +354,7 @@
                            <hr class="my-3">
 
                            <li class="sm-media text-center news zoom">
-                              <img src="./assets/img/media/godzila-kong-new.png" class="align-self-center" alt="Godzilla vs Kong">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/godzila-kong-new.png" class="align-self-center" alt="Godzilla vs Kong">
 
                               <div class="sm-body">
                                  <!-- <span class="sub-img fm">Filmes</span> -->
@@ -420,13 +420,13 @@
                      <h4><span class="text-M">R</span>edes sociais</h4>
                      
                      <ul class="list-unstyled">
-                        <li><a href="https://facebook.com" target="_blank" rel="external"><img src="./assets/img/media/facebook.svg" alt="Facebook">
+                        <li><a href="https://facebook.com" target="_blank" rel="external"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/facebook.svg" alt="Facebook">
                         </a></li>
 
-                        <li><a href="https://instagram.com" target="_blank" rel="external"><img src="./assets/img/media/instagram.svg" alt="Instagram">
+                        <li><a href="https://instagram.com" target="_blank" rel="external"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/instagram.svg" alt="Instagram">
                         </a></li>
 
-                        <li><a href="https://twitter.com" target="_blank" rel="external"><img src="./assets/img/media/twitter.svg" alt="Twitter">
+                        <li><a href="https://twitter.com" target="_blank" rel="external"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/twitter.svg" alt="Twitter">
                         </a></li>
                      </ul>
                   </div>              
@@ -446,6 +446,6 @@
          </section>
       </footer>
 
-      <script src="./assets/js/scripts.js"></script>
+      <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/scripts.js"></script>
    </body>
 </html>

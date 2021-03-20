@@ -145,7 +145,7 @@ header, .navbar{
 
 /* ------------------------------ SLIDER ------------------------------ */
 .bg-back{
-   background: url("../img/estrelado.png");
+   background: url("assets/img/estrelado.png");
    background-color: #000000;
 }
 
@@ -179,19 +179,19 @@ header, .navbar{
 
 /* itens */
 .carousel-item.the-last{
-   background: url("../img/slider/bg-last.png");
+   background: url("assets/img/slider/bg-last.png");
 }
 
 .carousel-item.spider{
-   background: url("../img/slider/bg-spaider.png");
+   background: url("assets/img/slider/bg-spaider.png");
 }
 
 .carousel-item.darth{
-   background: url("../img/slider/bg-darth.png") no-repeat;
+   background: url("assets/img/slider/bg-darth.png") no-repeat;
 }
 
 .carousel-item.millennium{
-   background: url("../img/logo/millenniun-black.png") no-repeat;
+   background: url("assets/img/logo/millenniun-black.png") no-repeat;
    background-size: cover;
 }
 
