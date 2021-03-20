@@ -53,9 +53,9 @@
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="home-menu">Menus</a>
 
                         <div class="dropdown-menu">
-                           <a href="/mundogeek/home/" class="dropdown-item text-dark">Home</a>
+                           <a href="/mundogeek/home" class="dropdown-item text-dark">Home</a>
 
-                           <a href="/mundogeek/blog-news/" class="dropdown-item text-dark">Blog News</a>
+                           <a href="/mundogeek/blog-news" class="dropdown-item text-dark">Blog News</a>
                         </div>
                      </li>                   
 
