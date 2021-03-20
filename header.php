@@ -48,13 +48,23 @@
                </button>
                
                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                  <div class="navbar-nav">
-                     <a href="#" class="nav-item nav-link" id="home-menu">Home</a>
-                     <a href="noticias-geek.html" class="nav-item nav-link" id="about-menu">FeedBacks</a>
-                     <a href="#" class="nav-item nav-link" id="comics-menu">Comics</a>
-                     <a href="#" class="nav-item nav-link" id="news-menu">Notícias</a>
-                     <a href="#" class="nav-item nav-link" id="contact-menu">Contato</a>
-                  </div>
+                  <ul class="list-unstyled navbar-nav">
+                     <li class="nav-item dropdown">
+                        <a href="index.php" class="nav-link dropdown-toggle" data-toggle="dropdown"  id="home-menu">Menus</a>
+
+                        <div class="dropdown-menu">
+                           <a href="index.php" class="dropdown-item" id="home-menu">Home</a>
+
+                           <a href="noticias-geek.php" class="dropdown-item" id="about-menu">Blog News</a>
+                        </div>
+                     </li>                   
+
+                     <li><a href="#" class="nav-item nav-link" id="comics-menu">Comics</a></li>
+
+                     <li><a href="#" class="nav-item nav-link" id="news-menu">Notícias</a></li>
+
+                     <li><a href="#" class="nav-item nav-link" id="contact-menu">Contato</a></li>
+                  </ul>
                </div>
             </nav>
          </div>
