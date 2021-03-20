@@ -5,7 +5,8 @@
       <?php the_content(); ?>
    
    <?php endwhile; else: ?>
-      <p><?php _e('Esta página não existe :/'); ?></p>
-      <p><?php _e('Esta página não existe :/'); ?></p>
+      <section class="container">
+         <p class="px-3 text-danger"><?php _e('Esta página não existe :/'); ?></p>
+      </section>
    <?php endif; ?>
 <?php get_footer(); ?>

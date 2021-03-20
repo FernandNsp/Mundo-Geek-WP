@@ -11,7 +11,7 @@
                <div class="container cont-news d-none d-md-flex">
                   <div class="row section">
                      <div class="col-md-12">
-                        <h2 class="main-subtitle my-5">Notícias Geek</h2>
+                        <h2 class="main-subtitle my-5"><?php the_title(); ?></h2>
                      </div>
 
                      <!-- PRIMEIRA COLUNA -->
