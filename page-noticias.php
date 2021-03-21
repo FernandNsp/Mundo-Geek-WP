@@ -23,15 +23,13 @@
                               if(isset($news)) { foreach($news as $new) {
                            ?>
                               <li class="media news my-1 zoom">
-                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/cruella-new2.png" class="align-self-start mr-3" alt="Cruella">
+                                 <img src="<?php echo $new['imagem']; ?>" class="align-self-start mr-3" alt="Cruella">
 
                                  <div class="media-body">
-                                    <span class="sub-img fm">Filmes</span>
+                                    <span class="sub-img fm"><?php echo $new['category']; ?></span>
 
-                                    <h5 class="mt-0 mb-1">Cruella terá uma Live-Action</h5>
-                                    <span class="span">
-                                       <p><?php echo get_post_meta(get_the_ID(), 'messnews', true); ?></p>
-                                    </span>
+                                    <h5 class="mt-0 mb-1"><?php echo $new['title']; ?></h5>
+                                    <span class="span"><?php echo $new['description']; ?></span>
                                  </div>
                               </li>
                            <?php } } ?>
