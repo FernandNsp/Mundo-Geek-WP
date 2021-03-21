@@ -17,8 +17,8 @@
                      <!-- PRIMEIRA COLUNA -->
                      <div class="prim-col col col-md-12 col-lg-6 d-none d-md-flex">
                         <ul class="list-unstyled">
-                           <li class="media news zoom">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/cruella-new2.png" class="align-self-center mr-3" alt="Cruella">
+                           <li class="media news my-1 zoom">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/cruella-new2.png" class="align-self-start mr-3" alt="Cruella">
 
                               <div class="media-body">
                                  <span class="sub-img fm">Filmes</span>
@@ -30,32 +30,28 @@
                               </div>
                            </li>
                            
-                           <li class="media news my-3 zoom">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/mortal-kombat-new.png" class="align-self-center mr-3" alt="Mortal Kombat">
+                           <li class="media news my-2 zoom">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/mortal-kombat-new.png" class="align-self-start mr-3" alt="Mortal Kombat">
 
                               <div class="media-body">
                                  <span class="sub-img fm">Filmes</span>
 
                                  <h5 class="mt-0 mb-1">Lançamento - Mortal Kombat</h5>
                                  <span class="span">
-                                    <p>Está <strong>CONFIRMADO</strong>, a estréia do filme Mortal Kombat está marcada para 15 de abril aqui no Brasil. O streaming será exclusivo na HBO Max. 
-                                    </p>
-
-                                    <p>Os atores escalados para este grande elenco assustou alguns fãs da saga, levando...</p>
+                                    <p><?php echo get_post_meta(get_the_ID(), 'messnews2', true); ?></p>
                                  </span>
                               </div>
                            </li>
 
                            <li class="media news zoom">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/godzila-kong-new.png" class="align-self-center mr-3" alt="Godzilla vs Kong">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/godzila-kong-new.png" class="align-self-start mr-3" alt="Godzilla vs Kong">
 
                               <div class="media-body">
                                  <span class="sub-img fm">Filmes</span>
 
                                  <h5 class="mt-0 mb-1">Godzilla vs Kong ganha novo trailer</h5>          
                                  <span class="span">
-                                    <p>O anúncio feito pelas redes oficiais do filme, revela uma batalha travada entre o Godzilla e o King Kong. O filme já tem sua data marcada no Brasil, seu lançamento ocorrerá em 25 de março nos cinemas...
-                                    </p>
+                                    <p><?php echo get_post_meta(get_the_ID(), 'messnews3', true); ?></p>
                                  </span>
                               </div>
                            </li>
@@ -66,43 +62,40 @@
                      <div class="second-col col-lg-6 d-none d-lg-flex">
                         <ul class="list-unstyled">
                            <li class="media news zoom">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/Rectangle 752.png" class="align-self-center mr-3" alt="Pedro Pascal">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/Rectangle 752.png" class="align-self-start mr-3" alt="Pedro Pascal">
 
                               <div class="media-body">
                                  <span class="sub-img bg-">Séries</span>
 
                                  <h5 class="mt-0 mb-1">Pedro Pascal como Joel?</h5>
                                  <span class="span">
-                                    <p>O anúncio feito pelo Deadline, confirmou o ator Pedro Pascal, conhecido pelas atuações em The Mandalorian da Disney e Kingsman, sendo Joel. Juntamente com ele, a atriz Bella Ramsey, que atuou como Lyanna Mormont em GOT, interpretrará a Ellie...</p>
+                                    <p><?php echo get_post_meta(get_the_ID(), 'messnews4', true); ?></p>
                                  </span>
                               </div>
                            </li>
                            
-                           <li class="media news my-3 zoom">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/constantine-new.png" class="align-self-center mr-3" alt="...">
+                           <li class="media news zoom">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/constantine-new.png" class="align-self-start mr-3" alt="...">
 
                               <div class="media-body">
                                  <span class="sub-img">Séries</span>
 
                                  <h5 class="mt-0 mb-1">Constantine ganhará série na HBO Max</h5>
                                  <span class="span">
-                                    <p>Constantine ganhará uma série de TV na HBO Max. O projeto, segundo a Variety, está em estágios iniciais de desenvolvimento, e deve ter conexões com um vindoura série da Liga da Justiça Sombria...
-                                    </p>
+                                    <p><?php echo get_post_meta(get_the_ID(), 'messnews5', true); ?></p>
                                  </span>
                               </div>
                            </li>
 
                            <li class="media news zoom">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/falcao-soldado-new.png" class="align-self-center mr-3" alt="...">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/falcao-soldado-new.png" class="align-self-start mr-3" alt="...">
 
                               <div class="media-body">
                                  <span class="sub-img">Séries</span>
 
                                  <h5 class="mt-0 mb-1">Falcão e Soldado Invernal</h5>
                                  <span class="span">
-                                    <p>A YAW Channel divulgou uma nova versão do trailer onde mostra que o seriado terá uma classificação indicativa de 14 anos, devido à "intensa violência" e linguagem presente na série.
-                                    A série será lançada no Disney+, em 19 de março...
-                                    </p>
+                                    <p><?php echo get_post_meta(get_the_ID(), 'messnews6', true); ?></p>
                                  </span>
                               </div>
                            </li>
@@ -195,6 +188,7 @@
             <div class="row">
                <h2 class="main-subtitle backs">Comentarios</h2>
             </div>
+
             <div class="row">
                <div class="col-md-6 d-sm-4">
                   <div class="media my-4">
