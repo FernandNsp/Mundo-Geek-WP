@@ -65,6 +65,12 @@
       ]);
 
       $cmb->add_group_field($news, [
+         'name' => 'Categoria (Filmes, Séries)',
+         'id' => 'category',
+         'type' => 'text',
+      ]);
+
+      $cmb->add_group_field($news, [
          'name' => 'Titulo',
          'id' => 'title',
          'type' => 'text',
@@ -73,7 +79,16 @@
       $cmb->add_group_field($news, [
          'name' => 'Descrição',
          'id' => 'description',
-         'type' => 'text',
+         'type' => 'wysiwyg',
+      ]);
+
+      $cmb->add_group_field($news, [
+         'name' => 'Imagem',
+         'id' => 'imagem',
+         'type' => 'file',
+         'options' => [
+            'url' => false,
+         ],
       ]);
    }
    
