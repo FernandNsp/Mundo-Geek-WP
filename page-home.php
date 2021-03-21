@@ -92,7 +92,7 @@
             <div class="container comics">
                <div class="row">
                   <div class="col-12">
-                     <h2 class="main-subtitle comics-sm">Comic Books</h2>
+                     <h2 class="main-subtitle comics-sm"><?php the_field2('combooks'); ?></h2>
                   </div>
 
                   <!-- Primeiro  Card -->
