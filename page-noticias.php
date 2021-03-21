@@ -17,18 +17,24 @@
                      <!-- PRIMEIRA COLUNA -->
                      <div class="prim-col col col-md-12 col-lg-6 d-none d-md-flex">
                         <ul class="list-unstyled">
-                           <li class="media news my-1 zoom">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/cruella-new2.png" class="align-self-start mr-3" alt="Cruella">
 
-                              <div class="media-body">
-                                 <span class="sub-img fm">Filmes</span>
+                           <?php 
+                              $news = get_field('whith_news');
+                              if(isset($news)) { foreach($news as $new) {
+                           ?>
+                              <li class="media news my-1 zoom">
+                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/cruella-new2.png" class="align-self-start mr-3" alt="Cruella">
 
-                                 <h5 class="mt-0 mb-1">Cruella terá uma Live-Action</h5>
-                                 <span class="span">
-                                    <p><?php echo get_post_meta(get_the_ID(), 'messnews', true); ?></p>
-                                 </span>
-                              </div>
-                           </li>
+                                 <div class="media-body">
+                                    <span class="sub-img fm">Filmes</span>
+
+                                    <h5 class="mt-0 mb-1">Cruella terá uma Live-Action</h5>
+                                    <span class="span">
+                                       <p><?php echo get_post_meta(get_the_ID(), 'messnews', true); ?></p>
+                                    </span>
+                                 </div>
+                              </li>
+                           <?php } } ?>
                            
                            <li class="media news my-2 zoom">
                               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/mortal-kombat-new.png" class="align-self-start mr-3" alt="Mortal Kombat">
