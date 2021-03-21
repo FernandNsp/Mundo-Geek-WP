@@ -11,7 +11,7 @@
                <div class="container cont-news d-none d-md-flex">
                   <div class="row section">
                      <div class="col-md-12">
-                        <h2 class="main-subtitle my-5"><?php the_title(); ?></h2>
+                        <h2 class="main-subtitle my-5 text-danger"><?php the_title(); ?></h2>
                      </div>
 
                      <!-- PRIMEIRA COLUNA -->
@@ -25,7 +25,7 @@
 
                                  <h5 class="mt-0 mb-1">Cruella terá uma Live-Action</h5>
                                  <span class="span">
-                                    <p>Disney trazendo mais uma live-actions, mas dessa vez surpreende a todos com a noticia de quem ganhará um filme próprio, a cruel <strong>Cruella</strong>, que será interpretada por Emma Stone, ganhadora do óscar de melhor Atriz Coadjuvante em 2019...</p>
+                                    <p><?php echo get_post_meta(get_the_ID(), 'messnews', true); ?></p>
                                  </span>
                               </div>
                            </li>
