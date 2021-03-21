@@ -38,6 +38,43 @@
       ]);
    }
 
-   add_action('cmb2_admin_init', 'cmb2_fields_home');
+   // Repeat news
+   add_action('cmb2_admin_init', 'cmb2_fields_news');
+   function cmb2_fields_news(){
+      $cmb = new_cmb2_box([
+         'id' => 'new_box',
+         'title' => 'Atualizar Noticias',
+         'object_types' => ['page'],
+         'show_on' => [
+            'key' => 'page-template',
+            'value' => 'page-noticias.php',
+         ],
+      ]);
+
+      $news = $cmb->add_field([
+         'name' => 'Lista de Noticias',
+         'id' => 'whith_news',
+         'type' => 'group',
+         'repeatable' => true,
+         'options' => [
+            'group_title' => 'Noticia {#}',
+            'add_button' => 'Adicionar Noticia',
+            'remove_button' => 'Remover',
+            'sortable' => true,
+         ],
+      ]);
+
+      $cmb->add_group_field($news, [
+         'name' => 'Titulo',
+         'id' => 'title',
+         'type' => 'text',
+      ]);
+
+      $cmb->add_group_field($news, [
+         'name' => 'Descrição',
+         'id' => 'description',
+         'type' => 'text',
+      ]);
+   }
    
 ?>
