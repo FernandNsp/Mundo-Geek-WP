@@ -92,12 +92,12 @@
             <div class="container comics">
                <div class="row">
                   <div class="col-12">
-                     <h2 class="main-subtitle comics-sm"><?php the_field2('combooks'); ?></h2>
+                     <h2 class="main-subtitle comics-sm"><?php the_field('combooks'); ?></h2>
                   </div>
 
                   <!-- Primeiro  Card -->
                   <div class="col-md-6 col-sm-6 col-lg-3">
-                     <img src="<?php the_field2('img_card'); ?>" alt="The Yellow Kid" class="card-img-top card-img">
+                     <img src="<?php the_field('img_card'); ?>" alt="The Yellow Kid" class="card-img-top card-img">
 
                      <div class="card-body zoom">
                         <h3 class="card-title">The Yellow Kid</h3>

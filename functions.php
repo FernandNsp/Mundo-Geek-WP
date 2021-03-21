@@ -1,11 +1,11 @@
 <?php 
-   function get_field2($key, $page_id = 0){
+   function get_field($key, $page_id = 0){
       $id = $page_id !== 0 ? $page_id : get_the_ID();
       return get_post_meta($id, $key, true);
    }
 
-   function the_field2($key, $page_id = 0){
-      echo get_field2($key, $page_id);
+   function the_field($key, $page_id = 0){
+      echo get_field($key, $page_id);
    }
    
    add_action('cmb2_admin_init', 'cmb2_fields_home');
@@ -22,7 +22,7 @@
 
       // Mudar subtitulo
       $cmb->add_field([
-         'name' => 'Quadrinhas',
+         'name' => 'Subtitulo Cards',
          'id' => 'combooks',
          'type' => 'text',
       ]);
