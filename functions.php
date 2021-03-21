@@ -9,7 +9,6 @@
    }
    
    add_action('cmb2_admin_init', 'cmb2_fields_home');
-
    function cmb2_fields_home(){
       $cmb = new_cmb2_box([
          'id' => 'home_box',
@@ -21,10 +20,24 @@
          ],
       ]);
 
+      // Mudar subtitulo
       $cmb->add_field([
          'name' => 'Quadrinhas',
          'id' => 'combooks',
          'type' => 'text',
       ]);
+
+      // Mudar imagem
+      $cmb->add_field([
+         'name' => 'Imagem Card',
+         'id' => 'img_card',
+         'type' => 'file',
+         'options' => [
+            'url' => false,
+         ],
+      ]);
    }
+
+   add_action('cmb2_admin_init', 'cmb2_fields_home');
+   
 ?>
