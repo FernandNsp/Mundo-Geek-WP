@@ -80,7 +80,7 @@
       $cmb->add_group_field($news, [
          'name' => 'Descrição',
          'id' => 'description',
-         'type' => 'wysiwyg',
+         'type' => 'textarea',
       ]);
 
       $cmb->add_group_field($news, [
@@ -121,7 +121,7 @@
       $cmb->add_group_field($newsCol, [
          'name' => 'Descrição',
          'id' => 'description',
-         'type' => 'wysiwyg',
+         'type' => 'textarea',
       ]);
 
       $cmb->add_group_field($newsCol, [
@@ -133,5 +133,4 @@
          ],
       ]);
    }
-   
 ?>
