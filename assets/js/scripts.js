@@ -3,7 +3,7 @@ $(document).ready(function(){
 
    // Parallax
    setTimeout(function(){
-      $('.back-star').parallax({imageSrc: './assets/img/estrela2.png'});
+      $('.back-star').parallax({imageSrc: './wp-content/themes/theme-mundogeek/assets/img/back-stars.png'});
    }, 250);
 
    // Scroll
