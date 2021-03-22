@@ -111,6 +111,27 @@
          'id' => 'category',
          'type' => 'text',
       ]);
+
+      $cmb->add_group_field($newsCol, [
+         'name' => 'Titulo',
+         'id' => 'title',
+         'type' => 'text',
+      ]);
+
+      $cmb->add_group_field($newsCol, [
+         'name' => 'Descrição',
+         'id' => 'description',
+         'type' => 'wysiwyg',
+      ]);
+
+      $cmb->add_group_field($newsCol, [
+         'name' => 'Imagem',
+         'id' => 'imagem',
+         'type' => 'file',
+         'options' => [
+            'url' => false,
+         ],
+      ]);
    }
    
 ?>
