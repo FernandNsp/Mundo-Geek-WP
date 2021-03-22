@@ -51,8 +51,9 @@
          ],
       ]);
 
+      // coluna 1
       $news = $cmb->add_field([
-         'name' => 'Lista de Noticias',
+         'name' => 'Noticias - Coluna 1',
          'id' => 'whith_news',
          'type' => 'group',
          'repeatable' => true,
@@ -89,6 +90,26 @@
          'options' => [
             'url' => false,
          ],
+      ]);
+
+      // coluna 2
+      $newsCol = $cmb->add_field([
+         'name' => 'Noticias - Coluna 2',
+         'id' => 'col_news',
+         'type' => 'group',
+         'repeatable' => true,
+         'options' => [
+            'group_title' => 'Noticia {#}',
+            'add_button' => 'Adicionar Noticia',
+            'remove_button' => 'Remover',
+            'sortable' => true,
+         ],
+      ]);
+
+      $cmb->add_group_field($newsCol, [
+         'name' => 'Categoria (Filmes, Séries)',
+         'id' => 'category',
+         'type' => 'text',
       ]);
    }
    
