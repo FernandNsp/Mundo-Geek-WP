@@ -243,7 +243,7 @@
                      </div>
 
                      <div class="row col-md-12 button">
-                        <a href="#" target="_blank" rel="external" class="btn-news">Saiba mais</a>
+                        <a href="/mundogeek/blog-news/" target="_blank" rel="external" class="btn-news">Saiba mais</a>
                      </div>
                   </div>
 
@@ -271,8 +271,6 @@
                               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/cruella-new2.png" class="cruela-img" alt="Cruella">
 
                               <div class="sm-body">
-                                 <!-- <span class="sub-img fm">Filmes</span> -->
-
                                  <h5>Cruella terá uma Live-Action</h5>
                                  <span class="span">
                                     <p>Disney trazendo mais uma live-actions, mas dessa vez surpreende a todos com a noticia de quem ganhará um filme próprio, a cruel <strong>Cruella</strong>, que será interpretada por Emma Stone, ganhadora do óscar de melhor Atriz Coadjuvante em 2019...</p>
@@ -286,8 +284,6 @@
                               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/mortal-kombat-new.png" class="align-self-center" alt="Mortal Kombat">
 
                               <div class="sm-body">
-                                 <!-- <span class="sub-img fm">Filmes</span> -->
-
                                  <h5>Lançamento - Mortal Kombat</h5>
                                  <span class="span">
                                     <p>Está <strong>CONFIRMADO</strong>, a estréia do filme Mortal Kombat está marcada para 15 de abril aqui no Brasil. O streaming será exclusivo na HBO Max. 
@@ -304,8 +300,6 @@
                               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/godzila-kong-new.png" class="align-self-center" alt="Godzilla vs Kong">
 
                               <div class="sm-body">
-                                 <!-- <span class="sub-img fm">Filmes</span> -->
-
                                  <h5>Godzilla vs Kong ganha novo trailer</h5>          
                                  <span class="span">
                                     <p>O anúncio feito pelas redes oficiais do filme, revela uma batalha travada entre o Godzilla e o King Kong. O filme já tem sua data marcada no Brasil, seu lançamento ocorrerá em 25 de março nos cinemas...
