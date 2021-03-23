@@ -7,7 +7,7 @@
       <main>
          <!-- NEWS MEDIA -->
          <section id="news-main">
-            <div class="back-star">
+            <div class="back-star-new">
                <div class="container cont-news d-none d-md-flex">
                   <div class="row section">
                      <div class="col-md-12">
@@ -75,7 +75,7 @@
          
          <!-- NEWS SEM MEDIA -->
          <section id="news-main">
-            <div class="back-star">
+            <div class="back-star-new">
                <div class="container cont-news">
                   <div class="row section">
                      <div class="col-md-12">
@@ -85,57 +85,28 @@
                      <!-- PRIMEIRA COLUNA -->
                      <div class="col-sm-12 prim-col">
                         <ul class="list-unstyled">
-                           <li class="my-2 sm-media text-center news zoom">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/cruella-new2.png" class="cruela-img" alt="Cruella">
-
-                              <div class="sm-body">
-                                 <!-- <span class="sub-img fm">Filmes</span> -->
-
-                                 <h5>Cruella terá uma Live-Action</h5>
-                                 <span class="span">
-                                    <p>Disney trazendo mais uma live-actions, mas dessa vez surpreende a todos com a noticia de quem ganhará um filme próprio, a cruel <strong>Cruella</strong>, que será interpretada por Emma Stone, ganhadora do óscar de melhor Atriz Coadjuvante em 2019...</p>
-                                 </span>
-                              </div>
-                           </li>
                            
-                           <hr class="my-3">
+                           <?php 
+                              $news = get_field('whith_news');
+                              if(isset($news)) { foreach($news as $new){
+                           ?>
+                              <li class="my-2 sm-media text-center news">
+                                 <img src="<?php echo $new['imagem']; ?>" class="align-self-start mr-3 mt-4" alt="">
 
-                           <li class="sm-media text-center news zoom">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/mortal-kombat-new.png" class="align-self-center" alt="Mortal Kombat">
+                                 <div class="sm-body">
+                                    <h5 class="mt-1 mb-2"><?php echo $new['title']; ?></h5>
+                                    <span class="span"><?php echo $new['description']; ?></span>
+                                 </div>
+                              </li>
 
-                              <div class="sm-body">
-                                 <!-- <span class="sub-img fm">Filmes</span> -->
+                              <hr class="my-3">
+                           <?php } } ?>
 
-                                 <h5>Lançamento - Mortal Kombat</h5>
-                                 <span class="span">
-                                    <p>Está <strong>CONFIRMADO</strong>, a estréia do filme Mortal Kombat está marcada para 15 de abril aqui no Brasil. O streaming será exclusivo na HBO Max. 
-                                    </p>
-
-                                    <p>Os atores escalados para este grande elenco assustou alguns fãs da saga, levando...</p>
-                                 </span>
-                              </div>
-                           </li>
-
-                           <hr class="my-3">
-
-                           <li class="sm-media text-center news zoom">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/godzila-kong-new.png" class="align-self-center" alt="Godzilla vs Kong">
-
-                              <div class="sm-body">
-                                 <!-- <span class="sub-img fm">Filmes</span> -->
-
-                                 <h5>Godzilla vs Kong ganha novo trailer</h5>          
-                                 <span class="span">
-                                    <p>O anúncio feito pelas redes oficiais do filme, revela uma batalha travada entre o Godzilla e o King Kong. O filme já tem sua data marcada no Brasil, seu lançamento ocorrerá em 25 de março nos cinemas...
-                                    </p>
-                                 </span>
-                              </div>
-                           </li>
                         </ul>
                      </div>
 
                      <div class="row col-md-12 button">
-                        <a href="#" target="_blank" rel="external" class="btn-news">Saiba mais</a>
+                        <a href="#" target="_blank" rel="external" class="btn-news mb-1">Saiba mais</a>
                      </div>
                   </div>
                </div>               
