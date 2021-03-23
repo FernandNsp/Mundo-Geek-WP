@@ -4,20 +4,24 @@
             <div class="container footer">
                <div class="row">
                   <div class="col-md-4 contact-box">
+                     <?php 
+                        $contato = get_page_by_title('Home')->ID;
+                     ?>
+
                      <h4><span class="text-M">S</span>obre</h4>
                      
                      <ul class="list-unstyled">
-                        <p class="text-light">O Mundo Geek foi criado para conclusão da capacitação de Tecnologias da <a href="https://byronsolutions.com/" target="_blanl" rel="external" class="byron-footer">byronsolutions</a>, após cursos de aprendizado front-end.</p>
+                        <p class="text-light"><?php the_field('sobre', $contato); ?></p>
                      </ul>
                   </div>
 
                   <div class="col-md-4 contact-box">
                      <h4><span class="text-M">C</span>ontato</h4>
-                     
+
                      <ul class="list-unstyled">
-                        <li>- 35 99999-9999</li>
-                        <li>- contato@mundogeek.com.br</li>
-                        <li>- Que a força esteja com você!</li>
+                        <li>- <?php the_field('telefone', $contato); ?></li>
+                        <li>- <?php the_field('email', $contato); ?></li>
+                        <li>- <?php the_field('endereco', $contato); ?></li>
                      </ul>
                   </div>
 
@@ -25,13 +29,13 @@
                      <h4><span class="text-M">R</span>edes sociais</h4>
                      
                      <ul class="list-unstyled">
-                        <li><a href="https://facebook.com" target="_blank" rel="external"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/facebook.svg" alt="Facebook">
+                        <li><a href="<?php the_field('face', $contato); ?>" target="_blank" rel="external"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/facebook.svg" alt="Facebook">
                         </a></li>
 
-                        <li><a href="https://instagram.com" target="_blank" rel="external"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/instagram.svg" alt="Instagram">
+                        <li><a href="<?php the_field('insta', $contato); ?>" target="_blank" rel="external"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/instagram.svg" alt="Instagram">
                         </a></li>
 
-                        <li><a href="https://twitter.com" target="_blank" rel="external"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/twitter.svg" alt="Twitter">
+                        <li><a href="<?php the_field('twit', $contato); ?> target="_blank" rel="external"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/twitter.svg" alt="Twitter">
                         </a></li>
                      </ul>
                   </div>              
