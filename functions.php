@@ -1,4 +1,5 @@
 <?php 
+   // Encurtar para the_fild()
    function get_field($key, $page_id = 0){
       $id = $page_id !== 0 ? $page_id : get_the_ID();
       return get_post_meta($id, $key, true);
@@ -45,7 +46,7 @@
       $cmb->add_group_field($newshome, [
          'name' => 'Descrição',
          'id' => 'description',
-         'type' => 'textarea',
+         'type' => 'textarea_small',
       ]);
 
       $cmb->add_group_field($newshome, [
@@ -81,7 +82,7 @@
       $cmb->add_group_field($newshomeCol, [
          'name' => 'Descrição',
          'id' => 'description',
-         'type' => 'textarea',
+         'type' => 'textarea_small',
       ]);
 
       $cmb->add_group_field($newshomeCol, [
@@ -119,14 +120,14 @@
          'name' => 'Descrição Introdução',
          'desc' => '(285 caracteres)',
          'id' => 'desc-intro',
-         'type' => 'textarea',
+         'type' => 'textarea_small',
       ]);
 
       $intro_slider = $cmb->add_field([
          'name' => 'Descrição Responsiva',
          'desc' => '(175 caracteres)',
          'id' => 'resp-intro',
-         'type' => 'textarea',
+         'type' => 'textarea_small',
       ]);
 
       // Slider group
@@ -159,14 +160,14 @@
          'name' => 'Descrição Slider',
          'desc' => '(395 caracteres)',
          'id' => 'desc',
-         'type' => 'textarea',
+         'type' => 'textarea_small',
       ]);
 
       $cmb->add_group_field($slider, [
          'name' => 'Descrição Responsiva',
          'desc' => '(185 caracteres)',
          'id' => 'desc-resp',
-         'type' => 'textarea',
+         'type' => 'textarea_small',
       ]);
 
       $cmb->add_group_field($slider, [
@@ -216,7 +217,7 @@
       $cmb->add_group_field($cardhome, [
          'name' => 'Descrição',
          'id' => 'description',
-         'type' => 'textarea',
+         'type' => 'textarea_small',
       ]);
 
       $cmb->add_group_field($cardhome, [
@@ -299,7 +300,7 @@
       $cmb->add_group_field($news, [
          'name' => 'Descrição',
          'id' => 'description',
-         'type' => 'textarea',
+         'type' => 'textarea_small',
       ]);
 
       $cmb->add_group_field($news, [
@@ -341,7 +342,7 @@
       $cmb->add_group_field($newsCol, [
          'name' => 'Descrição',
          'id' => 'description',
-         'type' => 'textarea',
+         'type' => 'textarea_small',
       ]);
 
       $cmb->add_group_field($newsCol, [
@@ -372,7 +373,7 @@
       $contato = $cmb->add_field([
          'name' => 'Sobre',
          'id' => 'sobre',
-         'type' => 'textarea',
+         'type' => 'textarea_small',
       ]);
 
       // CONTATO
@@ -413,4 +414,16 @@
          'type' => 'text',
       ]);
    }
+
+   // Funções para Limpar o Header
+   remove_action('wp_head', 'rsd_link');
+   remove_action('wp_head', 'wlwmanifest_link');
+   remove_action('wp_head', 'start_post_rel_link', 10, 0 );
+   remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+   remove_action('wp_head', 'feed_links_extra', 3);
+   remove_action('wp_head', 'wp_generator');
+   remove_action('wp_head', 'print_emoji_detection_script', 7);
+   remove_action('admin_print_scripts', 'print_emoji_detection_script');
+   remove_action('wp_print_styles', 'print_emoji_styles');
+   remove_action('admin_print_styles', 'print_emoji_styles');
 ?>
