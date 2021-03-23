@@ -6,31 +6,91 @@
 
    function the_field($key, $page_id = 0){
       echo get_field($key, $page_id);
-   }
+   }  
    
    add_action('cmb2_admin_init', 'cmb2_fields_home');
    function cmb2_fields_home(){
       $cmb = new_cmb2_box([
          'id' => 'home_box',
-         'title' => 'Home',
+         'title' => 'Atualizar Noticias',
          'object_types' => ['page'],
          'show_on' => [
             'key' => 'page-template',
-            'value' => 'page-home.php'
+            'value' => 'page-home.php',
          ],
       ]);
 
-      // Mudar subtitulo
-      $cmb->add_field([
-         'name' => 'Subtitulo Cards',
-         'id' => 'combooks',
+      // Repeat news home
+      // coluna 1
+      $nHome = $cmb->add_field([
+         'name' => 'Noticias - Coluna 1',
+         'id' => 'whith_nhome',
+         'type' => 'group',
+         'repeatable' => true,
+         'options' => [
+            'group_title' => 'Noticia {#}',
+            'add_button' => 'Adicionar Noticia',
+            'remove_button' => 'Remover',
+            'sortable' => true,
+         ],
+      ]);
+
+      $cmb->add_group_field($nHome, [
+         'name' => 'Categoria (Filmes, Séries)',
+         'id' => 'category',
          'type' => 'text',
       ]);
 
-      // Mudar imagem
-      $cmb->add_field([
-         'name' => 'Imagem Card',
-         'id' => 'img_card',
+      $cmb->add_group_field($nHome, [
+         'name' => 'Titulo',
+         'id' => 'title',
+         'type' => 'text',
+      ]);
+
+      $cmb->add_group_field($nHome, [
+         'name' => 'Descrição',
+         'id' => 'description',
+         'type' => 'textarea',
+      ]);
+
+      $cmb->add_group_field($nHome, [
+         'name' => 'Imagem',
+         'id' => 'imagem',
+         'type' => 'file',
+         'options' => [
+            'url' => false,
+         ],
+      ]);
+
+      // coluna 2
+      $nHomeCol = $cmb->add_field([
+         'name' => 'Noticias - Coluna 2',
+         'id' => 'col_nhome',
+         'type' => 'group',
+         'repeatable' => true,
+         'options' => [
+            'group_title' => 'Noticia {#}',
+            'add_button' => 'Adicionar Noticia',
+            'remove_button' => 'Remover',
+            'sortable' => true,
+         ],
+      ]);
+
+      $cmb->add_group_field($nHomeCol, [
+         'name' => 'Titulo',
+         'id' => 'title',
+         'type' => 'text',
+      ]);
+
+      $cmb->add_group_field($nHomeCol, [
+         'name' => 'Descrição',
+         'id' => 'description',
+         'type' => 'textarea',
+      ]);
+
+      $cmb->add_group_field($nHomeCol, [
+         'name' => 'Imagem',
+         'id' => 'imagem',
          'type' => 'file',
          'options' => [
             'url' => false,
@@ -38,7 +98,67 @@
       ]);
    }
 
-   // Repeat news
+   // -------------- Footer --------------
+   add_action('cmb2_admin_init', 'cmb2_fields_footer');
+   function cmb2_fields_footer(){
+      $cmb = new_cmb2_box([
+         'id' => 'footer_box',
+         'title' => 'Contato - Redes sociais',
+         'object_types' => ['page'],
+         'show_on' => [
+            'key' => 'page-template',
+            'value' => 'page-home.php',
+         ],
+      ]);
+
+      // SOBRE 
+      $contato = $cmb->add_field([
+         'name' => 'Sobre',
+         'id' => 'sobre',
+         'type' => 'textarea',
+      ]);
+
+      // CONTATO
+      $contato = $cmb->add_field([
+         'name' => 'Telefone',
+         'id' => 'telefone',
+         'type' => 'text',
+      ]);
+
+      $contato = $cmb->add_field([
+         'name' => 'E-mail',
+         'id' => 'email',
+         'type' => 'text',
+      ]);
+
+      $cmb->add_field([
+         'name' => 'Endereço',
+         'id' => 'endereco',
+         'type' => 'text',
+      ]);
+      
+      // REDES SOCIAIS
+      $cmb->add_field([
+         'name' => 'Facebook',
+         'id' => 'face',
+         'type' => 'text',
+      ]);
+
+      $cmb->add_field([
+         'name' => 'Instagram',
+         'id' => 'insta',
+         'type' => 'text',
+      ]);
+
+      $cmb->add_field([
+         'name' => 'Twitter',
+         'id' => 'twit',
+         'type' => 'text',
+      ]);
+   }
+
+
+   // -------------- REPEAT NEWS --------------
    add_action('cmb2_admin_init', 'cmb2_fields_news');
    function cmb2_fields_news(){
       $cmb = new_cmb2_box([
