@@ -13,7 +13,7 @@
    function cmb2_fields_home(){
       $cmb = new_cmb2_box([
          'id' => 'home_box',
-         'title' => 'Atualizar Noticias',
+         'title' => 'Adicionar Noticias',
          'object_types' => ['page'],
          'show_on' => [
             'key' => 'page-template',
@@ -30,7 +30,7 @@
          'repeatable' => true,
          'options' => [
             'group_title' => 'Noticia {#}',
-            'add_button' => 'Adicionar Noticia',
+            'add_button' => 'Adicionar Noticias',
             'remove_button' => 'Remover',
             'sortable' => true,
          ],
@@ -93,12 +93,93 @@
       ]);   
    }
 
+   // -------------- Slider / Carousel --------------
+   add_action('cmb2_admin_init', 'cmb2_fields_slider');
+   function cmb2_fields_slider(){
+      $cmb = new_cmb2_box([
+         'id' => 'slider_box',
+         'title' => 'Adicionar Carrossel',
+         'object_types' => ['page'],
+         'show_on' => [
+            'key' => 'page-template',
+            'value' => 'page-home.php',
+         ],
+      ]);
+
+      // Slider intro
+      $intro_slider = $cmb->add_field([
+         'name' => 'Titulo Introdução',
+         'id' => 'title-intro',
+         'type' => 'text',
+      ]);
+
+      $intro_slider = $cmb->add_field([
+         'name' => 'Descrição Introdução (285 caracteres)',
+         'id' => 'desc-intro',
+         'type' => 'textarea',
+      ]);
+
+      $intro_slider = $cmb->add_field([
+         'name' => 'Descrição Responsiva (175 caracteres)',
+         'id' => 'resp-intro',
+         'type' => 'textarea',
+      ]);
+
+      // Slider group
+      $slider = $cmb->add_field([
+         'name' => 'Maximo 3 sliders',
+         'id' => 'slider-home',
+         'type' => 'group',
+         'repeatable' => true,
+         'options' => [
+            'group_title' => 'Slider {#}',
+            'add_button' => 'Adicionar slider',
+            'remove_button' => 'Remover',
+            'sortable' => true,
+         ],
+      ]);
+
+      $cmb->add_group_field($slider, [
+         'name' => 'Titulo',
+         'id' => 'title-slider',
+         'type' => 'text',
+      ]);
+
+      $cmb->add_group_field($slider, [
+         'name' => 'Subtitulo',
+         'id' => 'subtitle',
+         'type' => 'text',
+      ]);
+
+      $cmb->add_group_field($slider, [
+         'name' => 'Descrição Slider (395 caracteres)',
+         'id' => 'desc',
+         'type' => 'textarea',
+      ]);
+
+      $cmb->add_group_field($slider, [
+         'name' => 'Descrição Responsiva (185 caracteres)',
+         'id' => 'desc-resp',
+         'type' => 'textarea',
+      ]);
+
+      $cmb->add_group_field($slider, [
+         'name' => 'Imagem (315px X 265)',
+         'id' => 'img-slider',
+         'type' => 'file',
+         'options' => [
+            'url' => false,
+         ],
+      ]);
+
+   }
+
    // -------------- Cards --------------
    add_action('cmb2_admin_init', 'cmb2_fields_cards');
    function cmb2_fields_cards(){
       $cmb = new_cmb2_box([
          'id' => 'card_box',
-         'title' => 'Comic Books',
+         'title' => 'Adicionar Comic Books',
          'object_types' => ['page'],
          'show_on' => [
             'key' => 'page-template',
@@ -174,7 +255,7 @@
    function cmb2_fields_news(){
       $cmb = new_cmb2_box([
          'id' => 'new_box',
-         'title' => 'Atualizar Noticias',
+         'title' => 'Adicionar Noticias',
          'object_types' => ['page'],
          'show_on' => [
             'key' => 'page-template',
@@ -190,7 +271,7 @@
          'repeatable' => true,
          'options' => [
             'group_title' => 'Noticia {#}',
-            'add_button' => 'Adicionar Noticia',
+            'add_button' => 'Adicionar noticia',
             'remove_button' => 'Remover',
             'sortable' => true,
          ],
@@ -231,7 +312,7 @@
          'repeatable' => true,
          'options' => [
             'group_title' => 'Noticia {#}',
-            'add_button' => 'Adicionar Noticia',
+            'add_button' => 'Adicionar noticia',
             'remove_button' => 'Remover',
             'sortable' => true,
          ],
