@@ -20,57 +20,32 @@
                   <!-- INTRO Slider -->      
                   <div class="carousel-item millennium active">
                      <div class="carousel-caption d-md-block" id="introducao">
-                        <h1 class="titulo"><span class="text-M">M</span>undo Geek</h1>
+                        <h1 class="titulo"><?php the_field('title-intro'); ?></h1>
                      
-                        <p class="my-5 text d-none d-md-flex">Trazemos as melhore e mais relevantes noticias da atualidade sobre os quadrinhos, filmes, séries e atores desta enorme cultura geek. Saiba sobre os acontecimentos de The Last Of Us, Star Wars, Spider-Man e uma enorme variedade de assuntos! Vem pro vale, há sempre espaço para você.</p>
+                        <p class="my-5 text d-none d-md-flex"><?php the_field('desc-intro'); ?></p>
                         
-                        <p class="d-sm-flex d-md-none d-lg-none">
-                           Trazemos as melhore e mais relevantes noticias da atualidade sobre os quadrinhos, filmes, séries e atores desta enorme cultura geek. Vem pro vale, há sempre espaço para você! 
-                        </p>
+                        <p class="d-sm-flex d-md-none d-lg-none"><?php the_field('resp-intro'); ?></p>
                      </div>
                   </div>
 
-                  <!-- Primeiro Slider -->
-                  <div class="carousel-item the-last">
-                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/slider/slider-thelast-hq.png" alt="The Last Of Us" class="d-none d-md-block img-slider slider-last">
+                  <!-- Sliders -->
+                  <?php 
+                     $slider = get_field('slider-home');
+                     if(isset($slider)) { foreach($slider as $sliders){
+                  ?>
+                     <div class="carousel-item the-last">
+                        <img src="<?php echo $sliders['img-slider']; ?>" alt="The Last Of Us" class="d-none d-md-block img-slider slider-last">
 
-                     <div class="carousel-caption d-md-block">
-                        <h3>The Last of us <span class="subtitle-span">American Dreams</span></h3>
-                        <p class="d-none d-lg-flex">DEZENOVE ANOS ATRÁS, um surto de um fungo parasita matou a maioria da população mundial. Em umas das poucas zonas de quarentena restantes, Ellie, treze anos, começa sua nova vida como uma das alunas de uma escola militar, onde uma amizade com a colega Riley a levará ao seu primeiro passeio do lado de fora. Ellie e Riley logo se confrontam com os violentos Vaga-Lumes.</p>
+                        <div class="carousel-caption d-md-block">
+                           <h3><?php echo $sliders['title-slider']; ?><span class="subtitle-span"><?php echo $sliders['subtitle']; ?></span></h3>
 
-                        <p class="p-sm d-md-flex d-lg-none">
-                           The last of us: Ellie, treze anos, começa sua nova vida como uma das alunas de uma escola militar, onde uma amizade com a colega Riley a levará ao seu primeiro passeio do lado de fora.
-                        </p>
+                           <p class="d-none d-lg-flex"><?php echo $sliders['desc']; ?></p>
+
+                           <p class="p-sm d-md-flex d-lg-none"><?php echo $sliders['desc-resp']; ?></p>
+                        </div>
                      </div>
-                  </div>
-
-                  <!-- Segundo Slider -->
-                  <div class="carousel-item spider">
-                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/slider/slider-spider-hq.png" alt="The Last Of Us" class="mx-2 img-slider d-none d-md-block">
-                     
-                     <div class="carousel-caption d-md-block">
-                        <h3>Miles Morales<span class="subtitle-span">Spider-Man</span></h3>
-                        <p class="d-none d-lg-flex">Miles Morales é um personagem presente nos quadrinhos da Marvel Comics, que apareceu pela primeira vez em Ultimate Fallout #4, após a morte de Peter Parker. Um adolescente negro com ascendência hispânica, Miles é o segundo Homem-Aranha a aparecer em Ultimate Marvel, e com uma continuação no Universo Marvel principal.</p>
-                        
-                        <p class="p-sm d-md-flex d-lg-none">
-                           Spider-Man: Um adolescente negro com ascendência hispânica, Miles é o segundo Homem-Aranha a aparecer em Ultimate Marvel, e com uma continuação no Universo Marvel principal.
-                        </p>
-                     </div>
-                  </div>
-
-                  <!-- Terceiro Slider -->
-                  <div class="carousel-item darth">
-                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/slider/slider-darth-hq.png" alt="Star Wars" class="mx-2 img-slider d-none d-md-flex">
-
-                     <div class="carousel-caption d-md-block">
-                        <h3 class="h3-sm">Star Wars – Império<span class="subtitle-span">Arco I: Traição</span></h3>
-                        <p class="d-none d-lg-flex">O Imperador governa a galáxia com punho de ferro e de sua ditadura implacável dissidentes começam a aparecer. Não me refiro, porém, à Aliança Rebelde – essa sim já existe, mas não é o foco deste primeiro arco de Star Wars – Império. Similarmente ao que veríamos posteriormente em Darth Vader e a Prisão Fantasma, Traição nos conta a história de uma pequena insurgência dentro do próprio Império.</p>
-
-                        <p class="p-sm d-md-flex d-lg-none">
-                           Star-wars: O enredo é permeado pela tragédia pessoal de Anakin Skywalker, um jedi (do bem) que sucumbe ao Lado Sombrio da Força (do mal) se transformando no vilão Darth Vader, que é um dos líderes do Império Galático.
-                        </p>
-                     </div>
-                  </div>
+                  <?php } } ?>
+                  
                </div>
             </div>
 
@@ -100,7 +75,7 @@
                      $cardhome = get_field('card-home');
                      if(isset($cardhome)) { foreach($cardhome as $cardshome){
                   ?>
-                     <div class="col-md-6 col-sm-6 col-lg-3">
+                     <div class="col-md-6 col-sm-6 col-lg-3 card-total">
                         <img src="<?php echo $cardshome['img-card']; ?>" class="card-img-top card-img" alt="">
 
                         <div class="card-body">
