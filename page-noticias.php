@@ -19,7 +19,7 @@
                         <ul class="list-unstyled">
 
                            <?php 
-                              $news = get_page_by_title('Home')->ID;
+                              $news = get_field('whith_news');
                               if(isset($news)) { foreach($news as $new){
                            ?>
                               <li class="media news my-1 zoom">
