@@ -121,7 +121,7 @@ nav{ /* adc depois */
    color: #FFF;
    
    padding: 4px;
-   margin: 20px auto;
+   margin: 40px auto 0;
    font-size: 60px;
    letter-spacing: .3rem;
    
@@ -131,7 +131,7 @@ nav{ /* adc depois */
    font-family: 'Anton', sans-serif;
 }
 
-.text-M{
+.titulo::first-letter{
    color: #ea2326;
 }
 
@@ -182,15 +182,8 @@ nav{ /* adc depois */
 
 /* itens */
 .carousel-item.the-last{
-   background: url("assets/img/slider/bg-last.png");
-}
-
-.carousel-item.spider{
-   background: url("assets/img/slider/bg-spaider.png");
-}
-
-.carousel-item.darth{
-   background: url("assets/img/slider/bg-darth.png") no-repeat;
+   background: url("assets/img/slider/bg-sliders.png");
+   background-size: cover;
 }
 
 .carousel-item.millennium{
@@ -205,16 +198,20 @@ nav{ /* adc depois */
 
 .img-slider{
    float: right;
-   margin-top: 30px;
+   margin-top: 35px;
 }
 
 .slider-last{
    width: 32%;
    height: 85%;   
-   margin-top: 25px;
+   margin-top: 30px;
 }
 
 /* textos */
+.carousel-caption h3, .carousel-caption p{
+   margin-top: 30px;
+} 
+
 .carousel-caption h3{
    color: #FFF;
    
@@ -415,6 +412,7 @@ span.sub-img{
    color: #444;
    width: 50vw;
    margin: 1rem auto;
+   font-size: 16px;
 }
 
 .forms{
@@ -528,6 +526,10 @@ span.sub-img{
    color: #fa292c;
 }
 
+.red-sub::first-letter{
+   color: #ea2326;
+}
+
 /* ---- COMENTARIOS ---- */
 .main-subtitle.backs{
    margin: 0 auto;
@@ -573,8 +575,7 @@ span.sub-img{
 
 @media (max-width: 1025px){
    #mainSlider{
-      height: 300px;
-      margin-top: 65px;
+      height: 320px;
    }
    
    /* intro slider */
@@ -585,9 +586,13 @@ span.sub-img{
       font-size: 14px;
       text-align: center;
    }
+
+   .titulo{
+      margin-top: 18px;
+   }
    
    #mainSlider .carousel-inner, #mainSlider .carousel-item{
-      height: 55.5vh;
+      height: 21rem;
    }
    
    /* img slider */   
@@ -597,8 +602,12 @@ span.sub-img{
    }
 
    .img-slider{
-      margin-top: 10px;
+      margin-top: 20px;
    }
+
+   .carousel-caption h3, .carousel-caption p{
+      margin-top: 25px;
+   } 
 
    /* cards tamanho*/
    .card-img{
@@ -634,10 +643,15 @@ span.sub-img{
 }
 
 @media (max-width: 768px){
+   .titulo{
+      margin-top: 40px;
+   }
+
    /* comics */
    .container.comics{
       padding: 0;
    }
+
    .col-12{
       margin: 0;
       padding: 0;
@@ -697,7 +711,7 @@ span.sub-img{
 
    /* news letter */
    .news-latter p{
-      width: 60vw;
+      width: 70vw;
    }
    
    #email-input{
@@ -732,18 +746,13 @@ span.sub-img{
       text-align: start;
    }
 
-   /* zoom efeito */
-   .zoom{
-      transition: 0s;
+   /* cards tamanho*/
+   .card-total{
+      margin: 0 5rem;
    }
 
-   .zoom:hover{
-      transform: scale(1);
-   }
-   
-   /* cards tamanho*/
-   .card-img{
-      height: 50%;
+   .card-body{
+      height: 10rem;
    }
 
    .card-title{
@@ -754,6 +763,11 @@ span.sub-img{
    .card-title::after{
       content: "";
       width: 30%;
+   }
+
+   /* news-letter */
+   .news-latter p{
+      width: 90vw;
    }
 }
 
@@ -769,11 +783,11 @@ span.sub-img{
    /* slider */
    #mainSlider{
       height: 300px;
-      margin-top: 63px;
    }
    
    .titulo{
       font-size: 50px;
+      margin-top: 25px;
    }
 
    #introducao p{
@@ -793,6 +807,16 @@ span.sub-img{
    .carousel-caption .p-sm{
       text-align: left;
    }
+
+   /* card */
+   .card-body{
+      height: 13rem;
+   }
+
+   /* cards tamanho*/
+   .card-total{
+      margin: 0 2rem;
+   }
 }
 
 @media (max-width: 416px){
@@ -802,5 +826,9 @@ span.sub-img{
 
    .carousel-caption .titulo{
       font-size: 36px;
+   }
+
+   .card-body{
+      height: 15rem;
    }
 }
