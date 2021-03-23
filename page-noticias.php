@@ -11,7 +11,7 @@
                <div class="container cont-news d-none d-md-flex">
                   <div class="row section">
                      <div class="col-md-12">
-                        <h2 class="main-subtitle my-5 text-danger"><?php the_title(); ?></h2>
+                        <h2 class="main-subtitle my-5"><?php the_title(); ?></h2>
                      </div>
 
                      <!-- PRIMEIRA COLUNA -->
@@ -29,7 +29,7 @@
                                     <span class="sub-img fm"><?php echo $new['category']; ?></span>
 
                                     <h5 class="mt-0 mb-1"><?php echo $new['title']; ?></h5>
-                                    <span class="span"><?php echo $new['description']; ?></span>
+                                    <span class="span"><p><?php echo $new['description']; ?></p></span>
                                  </div>
                               </li>
                            <?php } } ?>
@@ -52,21 +52,13 @@
                                     <span class="sub-img fm"><?php echo $newCol['category']; ?></span>
 
                                     <h5 class="mt-0 mb-1"><?php echo $newCol['title']; ?></h5>
-                                    <span class="span"><?php echo $newCol['description']; ?></span>
+                                    <span class="span"><p><?php echo $newCol['description']; ?></p></span>
                                  </div>
                               </li>
                            <?php } } ?>
                            
                         </ul>
                      </div>
-
-                     <div class="row col-md-12 button">
-                        <a href="#" target="_blank" rel="external" class="btn-news">Saiba mais</a>
-                     </div>
-                  </div>
-
-                  <div class="row">
-                     <div class="col-12"></div>
                   </div>
                </div>               
             </div>
@@ -82,7 +74,7 @@
                         <h2 class="main-subtitle my-5">Notícias Geek</h2>
                      </div>
 
-                     <!-- PRIMEIRA COLUNA -->
+                     <!-- COLUNA -->
                      <div class="col-sm-12 prim-col">
                         <ul class="list-unstyled">
                            
@@ -95,7 +87,7 @@
 
                                  <div class="sm-body">
                                     <h5 class="mt-1 mb-2"><?php echo $new['title']; ?></h5>
-                                    <span class="span"><?php echo $new['description']; ?></span>
+                                    <span class="span"><p><?php echo $new['description']; ?></p></span>
                                  </div>
                               </li>
 
@@ -103,10 +95,6 @@
                            <?php } } ?>
 
                         </ul>
-                     </div>
-
-                     <div class="row col-md-12 button">
-                        <a href="#" target="_blank" rel="external" class="btn-news mb-1">Saiba mais</a>
                      </div>
                   </div>
                </div>               
@@ -164,5 +152,14 @@
             </div>
          </section>
       </main>
+
    <?php endwhile; else: endif; ?>
+   <script>
+      $(document).ready(function(){
+         // Parallax
+         setTimeout(function(){
+            $('.back-star-new').parallax({imageSrc: '../wp-content/themes/theme-mundogeek/assets/img/back-stars.png'});
+         }, 250);
+      });
+   </script>
 <?php get_footer(); ?>
