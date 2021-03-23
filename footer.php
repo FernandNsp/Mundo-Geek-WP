@@ -35,7 +35,7 @@
                         <li><a href="<?php the_field('insta', $contato); ?>" target="_blank" rel="external"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/instagram.svg" alt="Instagram">
                         </a></li>
 
-                        <li><a href="<?php the_field('twit', $contato); ?> target="_blank" rel="external"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/twitter.svg" alt="Twitter">
+                        <li><a href="<?php the_field('twit', $contato); ?>" target="_blank" rel="external"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/twitter.svg" alt="Twitter">
                         </a></li>
                      </ul>
                   </div>              
