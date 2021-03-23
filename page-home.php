@@ -176,7 +176,7 @@
 
          </section>
          
-         <!-- NEWS SEM MEDIA -->
+         <!-- NEWS MEDIA RESPONSIVE -->
          <section id="news-main">
             <div class="back-star">
                <div class="container cont-news">
@@ -185,7 +185,7 @@
                         <h2 class="main-subtitle">Notícias Geek</h2>
                      </div>
 
-                     <!-- PRIMEIRA COLUNA -->
+                     <!-- COLUNA -->
                      <div class="col-sm-12 prim-col">
                         <ul class="list-unstyled">
 
@@ -194,7 +194,7 @@
                               if(isset($newshome)) { foreach($newshome as $newhome){
                            ?>
                               <li class="my-2 sm-media text-center news">
-                                 <img src="<?php echo $newhome['imagem']; ?>" class="align-self-start mr-3 mt-4" alt="">
+                                 <img src="<?php echo $newhome['imagem']; ?>" class="align-self-center mt-4" alt="">
 
                                  <div class="sm-body">
                                     <h5 class="mt-1 mb-2"><?php echo $newhome['title']; ?></h5>
@@ -220,8 +220,9 @@
          <div class="container">
             <div class="row">
                <div class="col-md-12 news-latter">
-                  <h3 class="text-center">Notícias quentinhas para você!</h3>
-                  <p class="text-center">Agora o Mundo Geek envia semanalmente as melhores noticias sobre suas séries, filmes, jogos e animes favoritos na sua caixa postal. Faça sua inscrição abaixo!</p>
+                  <h3 class="text-center"><?php the_field('let-title'); ?></h3>
+                  
+                  <p class="text-center"><?php the_field('let-desc'); ?></p>
                   
                   <form action="" class="forms">
                      <input type="email" name="email" id="email-input" placeholder="E-mail" class="form-control">
