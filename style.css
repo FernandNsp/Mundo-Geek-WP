@@ -70,6 +70,10 @@ header, .navbar{
    background-color: #191919;
 }
 
+nav{ /* adc depois */
+   height: 4rem;
+}
+
 #nav-container{
    padding-top: 0;
    padding-bottom: 0;
@@ -150,7 +154,7 @@ header, .navbar{
 }
 
 #mainSlider .carousel-inner, #mainSlider .carousel-item{
-   height: 55vh;
+   height: 23rem;
 }
 
 #mainSlider .carousel-caption{
@@ -249,6 +253,10 @@ header, .navbar{
 /* ------------------------------ CARDS ------------------------------ */
 
 /* cards tamanho*/
+.comics-sm{
+   margin-top: 3rem;
+}
+
 .card-img{
    height: 60%;
 
@@ -751,7 +759,7 @@ span.sub-img{
 
 @media (max-width: 495px){
    #mainSlider .carousel-inner, #mainSlider .carousel-item{
-      height: 45vh;
+      height: 20rem;
    }
       
    .container.comics{
@@ -789,7 +797,7 @@ span.sub-img{
 
 @media (max-width: 416px){
    #mainSlider .carousel-inner, #mainSlider .carousel-item{
-      height: 45vh;
+      height: 20rem;
    }
 
    .carousel-caption .titulo{
