@@ -8,7 +8,7 @@
                         $contato = get_page_by_title('Home')->ID;
                      ?>
 
-                     <h4><span class="text-M">S</span>obre</h4>
+                     <h4 class="red-sub">Sobre</h4>
                      
                      <ul class="list-unstyled">
                         <p class="text-light"><?php the_field('sobre', $contato); ?></p>
@@ -16,7 +16,7 @@
                   </div>
 
                   <div class="col-md-4 contact-box">
-                     <h4><span class="text-M">C</span>ontato</h4>
+                     <h4 class="red-sub">Contato</h4>
 
                      <ul class="list-unstyled">
                         <li>- <?php the_field('telefone', $contato); ?></li>
@@ -26,7 +26,7 @@
                   </div>
 
                   <div class="col-md-4 contact-box contact-redes">
-                     <h4><span class="text-M">R</span>edes sociais</h4>
+                     <h4 class="red-sub">Redes sociais</h4>
                      
                      <ul class="list-unstyled">
                         <li><a href="<?php the_field('face', $contato); ?>" target="_blank" rel="external"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/facebook.svg" alt="Facebook">
