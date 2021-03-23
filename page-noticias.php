@@ -19,8 +19,8 @@
                         <ul class="list-unstyled">
 
                            <?php 
-                              $news = get_field('whith_news');
-                              if(isset($news)) { foreach($news as $new) {
+                              $news = get_page_by_title('Home')->ID;
+                              if(isset($news)) { foreach($news as $new){
                            ?>
                               <li class="media news my-1 zoom">
                                  <img src="<?php echo $new['imagem']; ?>" class="align-self-start mr-3 my-4" alt="">
