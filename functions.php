@@ -141,6 +141,34 @@
       ]);
    }
 
+   // -------------- News Letter --------------
+   add_action('cmb2_admin_init', 'cmb2_fields_letter');
+   function cmb2_fields_letter(){
+      $cmb = new_cmb2_box([
+         'id' => 'letter_box',
+         'title' => 'NewsLetter',
+         'object_types' => ['page'],
+         'show_on' => [
+            'key' => 'page-template',
+            'value' => 'page-home.php',
+         ],
+      ]);
+
+      // Titulo 
+      $letter = $cmb->add_field([
+         'name' => 'Titulo',
+         'id' => 'let-title',
+         'type' => 'text',
+      ]);
+
+      // Descricao curta
+      $letter = $cmb->add_field([
+         'name' => 'Descrição',
+         'id' => 'let-desc',
+         'type' => 'text',
+      ]);
+   }
+
    // -------------- BLOG NEWS --------------
    add_action('cmb2_admin_init', 'cmb2_fields_news');
    function cmb2_fields_news(){

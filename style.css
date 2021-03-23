@@ -298,6 +298,7 @@ nav{ /* adc depois */
 }
 
 /* --------------- NEWS --------------- */
+
 .container.cont-news{
    display: none;
 }
@@ -341,6 +342,12 @@ nav{ /* adc depois */
 
 .container.cont-news{
    padding-top: 40px;
+}
+
+/* news-blog */
+.back-star-new{
+   background: url("assets/img/back-stars.png");
+   background-size: cover;
 }
 
 /* media objects */
