@@ -115,14 +115,13 @@ nav{ /* adc depois */
 /* ------------------------------ INTRODUCAO SLIDER ------------------------------ */
 #mainSlider{
    height: 340px;
-   margin-top: 65px;
 }
 
 .titulo{
    color: #FFF;
    
    padding: 4px;
-   margin: 10px auto;
+   margin: 20px auto;
    font-size: 60px;
    letter-spacing: .3rem;
    
@@ -344,13 +343,7 @@ nav{ /* adc depois */
    padding-top: 40px;
 }
 
-/* news-blog */
-.back-star-new{
-   background: url("assets/img/back-stars.png");
-   background-size: cover;
-}
-
-/* media objects */
+   /* media objects */
 .news img{
    margin: 20px 0;
 }
