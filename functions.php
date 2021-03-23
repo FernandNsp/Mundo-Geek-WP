@@ -50,6 +50,7 @@
 
       $cmb->add_group_field($newshome, [
          'name' => 'Imagem',
+         'desc' => '(189px X 138px)',
          'id' => 'imagem',
          'type' => 'file',
          'options' => [
@@ -85,6 +86,7 @@
 
       $cmb->add_group_field($newshomeCol, [
          'name' => 'Imagem',
+         'desc' => '(189px X 138px)',
          'id' => 'imagem',
          'type' => 'file',
          'options' => [
@@ -114,13 +116,15 @@
       ]);
 
       $intro_slider = $cmb->add_field([
-         'name' => 'Descrição Introdução (285 caracteres)',
+         'name' => 'Descrição Introdução',
+         'desc' => '(285 caracteres)',
          'id' => 'desc-intro',
          'type' => 'textarea',
       ]);
 
       $intro_slider = $cmb->add_field([
-         'name' => 'Descrição Responsiva (175 caracteres)',
+         'name' => 'Descrição Responsiva',
+         'desc' => '(175 caracteres)',
          'id' => 'resp-intro',
          'type' => 'textarea',
       ]);
@@ -152,19 +156,22 @@
       ]);
 
       $cmb->add_group_field($slider, [
-         'name' => 'Descrição Slider (395 caracteres)',
+         'name' => 'Descrição Slider',
+         'desc' => '(395 caracteres)',
          'id' => 'desc',
          'type' => 'textarea',
       ]);
 
       $cmb->add_group_field($slider, [
-         'name' => 'Descrição Responsiva (185 caracteres)',
+         'name' => 'Descrição Responsiva',
+         'desc' => '(185 caracteres)',
          'id' => 'desc-resp',
          'type' => 'textarea',
       ]);
 
       $cmb->add_group_field($slider, [
-         'name' => 'Imagem (315px X 265)',
+         'name' => 'Imagem',
+         'desc' => '(315px X 265px)',
          'id' => 'img-slider',
          'type' => 'file',
          'options' => [
@@ -297,6 +304,7 @@
 
       $cmb->add_group_field($news, [
          'name' => 'Imagem',
+         'desc' => '(189px X 138px)',
          'id' => 'imagem',
          'type' => 'file',
          'options' => [
@@ -338,6 +346,7 @@
 
       $cmb->add_group_field($newsCol, [
          'name' => 'Imagem',
+         'desc' => '(189px X 138px)',
          'id' => 'imagem',
          'type' => 'file',
          'options' => [
