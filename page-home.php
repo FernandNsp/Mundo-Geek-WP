@@ -95,45 +95,23 @@
                      <h2 class="main-subtitle comics-sm"><?php the_field('combooks'); ?></h2>
                   </div>
 
-                  <!-- Primeiro  Card -->
-                  <div class="col-md-6 col-sm-6 col-lg-3">
-                     <img src="<?php the_field('img_card'); ?>" alt="The Yellow Kid" class="card-img-top card-img">
+                  <!-- Cards -->
+                  <?php 
+                     $cardhome = get_field('card-home');
+                     if(isset($cardhome)) { foreach($cardhome as $cardshome){
+                  ?>
+                     <div class="col-md-6 col-sm-6 col-lg-3">
+                        <img src="<?php echo $cardshome['img-card']; ?>" class="card-img-top card-img" alt="">
 
-                     <div class="card-body zoom">
-                        <h3 class="card-title">The Yellow Kid</h3>
-                        <p class="card-text">Mickey Dugan, mais conhecido como The Yellow Kid, era o personagem principal de Hogan's Alley, uma das primeiras histórias em quadrinhos a ser impressa em cores.</p>
+                        <div class="card-body">
+                           <h3 class="card-title"><?php echo $cardshome['title']; ?></h3>
+                           <p class="card-text"><?php echo $cardshome['description']; ?></p>
+                        </div>
                      </div>
-                  </div>
 
-                  <!-- Segundo Card -->
-                  <div class="col-md-6 col-sm-6 col-lg-3">
-                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/cards/hq-marvel.png" alt="Avengers" class="card-img-top card-img">
+                     <hr class="my-3">
+                  <?php } } ?>
 
-                     <div class="card-body zoom">
-                        <h3 class="card-title">Avengers</h3>
-                        <p class="card-text">A Marvel Comics é uma editora norte-americana de mídias relacionadas. Hoje a Marvel Comics é considerada a maior editora de histórias em quadrinhos do mundo.</p>
-                     </div>
-                  </div>
-
-                  <!-- Terceiro  Card -->
-                  <div class="col-md-6 col-sm-6 col-lg-3">
-                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/cards/hq-starwars.png" alt="Star Wars" class="card-img-top card-img">
-
-                     <div class="card-body zoom">
-                        <h3 class="card-title">Star Wars</h3>
-                        <p class="card-text">O investimento no Universo Expandido de Star Wars ficou ainda maior. Séries, quadrinhos e, especialmente, livros da franquia que entraram para o cânone oficial.</p>
-                     </div>
-                  </div>
-
-                  <!-- Quarto Card -->
-                  <div class="col-md-6 col-sm-6 col-lg-3">
-                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/cards/hq-thelast.png" alt="The Last of Us - American Dreams" class="card-img-top card-img">
-
-                     <div class="card-body zoom">
-                        <h3 class="card-title">The Last Of Us</h3>
-                        <p class="card-text">O quadrinho serve de prequela para The Last of Us, mostrando a jornada de Ellie e seu encontro com Riley Abel, devido a singularidade de seu nascimento.</p>
-                     </div>
-                  </div>
                </div>
             </div>
          </section>
@@ -150,105 +128,48 @@
                      <!-- PRIMEIRA COLUNA -->
                      <div class="prim-col col col-md-12 col-lg-6 d-none d-md-flex">
                         <ul class="list-unstyled">
-                           <li class="media news zoom">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/cruella-new2.png" class="align-self-center mr-3" alt="Cruella">
-
-                              <div class="media-body">
-                                 <span class="sub-img fm">Filmes</span>
-
-                                 <h5 class="mt-0 mb-1">Cruella terá uma Live-Action</h5>
-                                 <span class="span">
-                                    <p>Disney trazendo mais uma live-actions, mas dessa vez surpreende a todos com a noticia de quem ganhará um filme próprio, a cruel <strong>Cruella</strong>, que será interpretada por Emma Stone, ganhadora do óscar de melhor Atriz Coadjuvante em 2019...</p>
-                                 </span>
-                              </div>
-                           </li>
                            
-                           <li class="media news my-3 zoom">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/mortal-kombat-new.png" class="align-self-center mr-3" alt="Mortal Kombat">
+                           <?php 
+                              $newshome = get_field('news-home');
+                              if(isset($newshome)) { foreach($newshome as $newhome){
+                           ?>
+                              <li class="media news my-1 zoom">
+                                 <img src="<?php echo $newhome['imagem']; ?>" class="align-self-start mr-3 mt-4" alt="">
 
-                              <div class="media-body">
-                                 <span class="sub-img fm">Filmes</span>
-
-                                 <h5 class="mt-0 mb-1">Lançamento - Mortal Kombat</h5>
-                                 <span class="span">
-                                    <p>Está <strong>CONFIRMADO</strong>, a estréia do filme Mortal Kombat está marcada para 15 de abril aqui no Brasil. O streaming será exclusivo na HBO Max. 
-                                    </p>
-
-                                    <p>Os atores escalados para este grande elenco assustou alguns fãs da saga, levando...</p>
-                                 </span>
-                              </div>
-                           </li>
-
-                           <li class="media news zoom">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/godzila-kong-new.png" class="align-self-center mr-3" alt="Godzilla vs Kong">
-
-                              <div class="media-body">
-                                 <span class="sub-img fm">Filmes</span>
-
-                                 <h5 class="mt-0 mb-1">Godzilla vs Kong ganha novo trailer</h5>          
-                                 <span class="span">
-                                    <p>O anúncio feito pelas redes oficiais do filme, revela uma batalha travada entre o Godzilla e o King Kong. O filme já tem sua data marcada no Brasil, seu lançamento ocorrerá em 25 de março nos cinemas...
-                                    </p>
-                                 </span>
-                              </div>
-                           </li>
+                                 <div class="media-body">
+                                    <h5 class="mt-3 mb-1"><?php echo $newhome['title']; ?></h5>
+                                    <span class="span"><p><?php echo $newhome['description']; ?></p></span>
+                                 </div>
+                              </li>
+                           <?php } } ?>
+                                                      
                         </ul>
                      </div>
 
                      <!-- SEGUNDA COLUNA -->
                      <div class="second-col col-lg-6 d-none d-lg-flex">
                         <ul class="list-unstyled">
-                           <li class="media news zoom">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/Rectangle 752.png" class="align-self-center mr-3" alt="Pedro Pascal">
-
-                              <div class="media-body">
-                                 <span class="sub-img bg-">Séries</span>
-
-                                 <h5 class="mt-0 mb-1">Pedro Pascal como Joel?</h5>
-                                 <span class="span">
-                                    <p>O anúncio feito pelo Deadline, confirmou o ator Pedro Pascal, conhecido pelas atuações em The Mandalorian da Disney e Kingsman, sendo Joel. Juntamente com ele, a atriz Bella Ramsey, que atuou como Lyanna Mormont em GOT, interpretrará a Ellie...</p>
-                                 </span>
-                              </div>
-                           </li>
                            
-                           <li class="media news my-3 zoom">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/constantine-new.png" class="align-self-center mr-3" alt="...">
+                           <?php 
+                              $newshomeCol = get_field('news-homecol');
+                              if(isset($newshomeCol)) { foreach($newshomeCol as $newhomeCol){
+                           ?>
+                              <li class="media news my-1 zoom">
+                                 <img src="<?php echo $newhomeCol['imagem']; ?>" class="align-self-start mr-3 mt-4" alt="">
 
-                              <div class="media-body">
-                                 <span class="sub-img">Séries</span>
-
-                                 <h5 class="mt-0 mb-1">Constantine ganhará série na HBO Max</h5>
-                                 <span class="span">
-                                    <p>Constantine ganhará uma série de TV na HBO Max. O projeto, segundo a Variety, está em estágios iniciais de desenvolvimento, e deve ter conexões com um vindoura série da Liga da Justiça Sombria...
-                                    </p>
-                                 </span>
-                              </div>
-                           </li>
-
-                           <li class="media news zoom">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/falcao-soldado-new.png" class="align-self-center mr-3" alt="...">
-
-                              <div class="media-body">
-                                 <span class="sub-img">Séries</span>
-
-                                 <h5 class="mt-0 mb-1">Falcão e Soldado Invernal</h5>
-                                 <span class="span">
-                                    <p>A YAW Channel divulgou uma nova versão do trailer onde mostra que o seriado terá uma classificação indicativa de 14 anos, devido à "intensa violência" e linguagem presente na série.
-                                    A série será lançada no Disney+, em 19 de março...
-                                    </p>
-                                 </span>
-                              </div>
-                           </li>
+                                 <div class="media-body">
+                                    <h5 class="mt-3 mb-1"><?php echo $newhomeCol['title']; ?></h5>
+                                    <span class="span"><p><?php echo $newhomeCol['description']; ?></p></span>
+                                 </div>
+                              </li>
+                           <?php } } ?>
+                           
                         </ul>
                      </div>
 
                      <div class="row col-md-12 button">
-                        <a href="/mundogeek/blog-news/" target="_blank" rel="external" class="btn-news">Saiba mais</a>
+                        <a href="/mundogeek/blog-news/" target="_blank" rel="external" class="btn-news mb-3">Saiba mais</a>
                      </div>
-                  </div>
-
-                  <div class="row">
-                     <div class="col-12"></div>
                   </div>
                </div>               
             </div>
@@ -267,51 +188,28 @@
                      <!-- PRIMEIRA COLUNA -->
                      <div class="col-sm-12 prim-col">
                         <ul class="list-unstyled">
-                           <li class="my-2 sm-media text-center news zoom">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/cruella-new2.png" class="cruela-img" alt="Cruella">
 
-                              <div class="sm-body">
-                                 <h5>Cruella terá uma Live-Action</h5>
-                                 <span class="span">
-                                    <p>Disney trazendo mais uma live-actions, mas dessa vez surpreende a todos com a noticia de quem ganhará um filme próprio, a cruel <strong>Cruella</strong>, que será interpretada por Emma Stone, ganhadora do óscar de melhor Atriz Coadjuvante em 2019...</p>
-                                 </span>
-                              </div>
-                           </li>
-                           
-                           <hr class="my-3">
+                           <?php 
+                              $newshome = get_field('news-home');
+                              if(isset($newshome)) { foreach($newshome as $newhome){
+                           ?>
+                              <li class="my-2 sm-media text-center news">
+                                 <img src="<?php echo $newhome['imagem']; ?>" class="align-self-start mr-3 mt-4" alt="">
 
-                           <li class="sm-media text-center news zoom">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/mortal-kombat-new.png" class="align-self-center" alt="Mortal Kombat">
+                                 <div class="sm-body">
+                                    <h5 class="mt-1 mb-2"><?php echo $newhome['title']; ?></h5>
+                                    <span class="span"><p><?php echo $newhome['description']; ?></p></span>
+                                 </div>
+                              </li>
 
-                              <div class="sm-body">
-                                 <h5>Lançamento - Mortal Kombat</h5>
-                                 <span class="span">
-                                    <p>Está <strong>CONFIRMADO</strong>, a estréia do filme Mortal Kombat está marcada para 15 de abril aqui no Brasil. O streaming será exclusivo na HBO Max. 
-                                    </p>
+                              <hr class="my-3">
+                           <?php } } ?>
 
-                                    <p>Os atores escalados para este grande elenco assustou alguns fãs da saga, levando...</p>
-                                 </span>
-                              </div>
-                           </li>
-
-                           <hr class="my-3">
-
-                           <li class="sm-media text-center news zoom">
-                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/media/godzila-kong-new.png" class="align-self-center" alt="Godzilla vs Kong">
-
-                              <div class="sm-body">
-                                 <h5>Godzilla vs Kong ganha novo trailer</h5>          
-                                 <span class="span">
-                                    <p>O anúncio feito pelas redes oficiais do filme, revela uma batalha travada entre o Godzilla e o King Kong. O filme já tem sua data marcada no Brasil, seu lançamento ocorrerá em 25 de março nos cinemas...
-                                    </p>
-                                 </span>
-                              </div>
-                           </li>
                         </ul>
                      </div>
 
                      <div class="row col-md-12 button">
-                        <a href="#" target="_blank" rel="external" class="btn-news">Saiba mais</a>
+                        <a href="#" target="_blank" rel="external" class="btn-news mb-1">Saiba mais</a>
                      </div>
                   </div>
                </div>               
