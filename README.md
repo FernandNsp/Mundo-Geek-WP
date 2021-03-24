@@ -15,7 +15,7 @@ Para acessar o **projeto**, apenas para visualização antes das alterações co
 
 ## 🔖 Sobre
 
-Esse projeto <strong>Mundo Geek</strong> foi desenvolvido para conclusão da capacitação de frontend, onde utilizei todo o meu aprendizado adquirido no decorrer do curso. Sua função é informar os amantes da cultura geek com novidades sobre jogos, filmes e séries.
+O projeto <strong>Mundo Geek</strong> foi desenvolvido para conclusão da capacitação de frontend, onde utilizei todo o meu aprendizado adquirido no decorrer do curso. Sua função é informar os amantes da cultura geek com novidades sobre jogos, filmes e séries.
 
 Na capacitação de WordPress utilizamos esse mesmo projeto, adaptado como tema, para que o site pudesse, de forma dinâmica, ter mudanças sem a necessidade da utilização de códigos, mudando tudo no painel do Wordpress.
 
