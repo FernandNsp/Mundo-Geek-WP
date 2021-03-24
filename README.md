@@ -50,7 +50,7 @@
 <p>Para utilizar o tema basta clonar este repositório, colocar os arquivos em uma pasta e colar essa pasta em Themes no WordPress.</p>
 
 ```bash
-$ git clone https://github.com/FernandNsp/Site-com-Wordpress.git
+$ git clone https://github.com/FernandNsp/Mundo_Geek
 ```
 <p>O código é aberto, portanto sinta-se livre para usá-lo!</p>
 
