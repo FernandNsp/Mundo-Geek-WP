@@ -1,10 +1,9 @@
-<h1 align="center" color="#fff"> 
+<h1 align="center"> 
    Mundo Geek
 </h1>
 
-<h1 align="center"> 
-   <img src="https://ik.imagekit.io/fernandasene/MundoGeek_r0saFoy8KW.png">
-</h1>
+<img src="https://ik.imagekit.io/fernandasene/MundoGeek_r0saFoy8KW.png" align="center">
+<br><br>
 
 Para acessar o **projeto**, apenas para visualização antes das alterações com WordPress, entre aqui: <a href="https://github.com/FernandNsp/FernandNsp.github.io">**Repositório**</a>.
 
@@ -25,7 +24,7 @@ O projeto <strong>Mundo Geek</strong> foi desenvolvido para conclusão da capaci
 
 Na capacitação de WordPress utilizamos esse mesmo projeto, adaptado como tema, para que o site pudesse, de forma dinâmica, ter mudanças sem a necessidade da utilização de códigos, mudando tudo no painel do Wordpress.
 
-<br>
+---
 
 ## 🚀 Tecnologias utilizadas
 ### 👩‍💻 Desenvolvimento web
@@ -40,13 +39,13 @@ Na capacitação de WordPress utilizamos esse mesmo projeto, adaptado como tema,
 - PHP
 - JavaScript
 
-<br>
+---
 
 ## 🔌 Plugins WordPress
 - CMB2: Utilizado para adicionar campos personalizados, usando functions.php para criar esses campos e adicioná-los ao WordPress.
 - Disable Gutenberg: Restaurar o editor clássico do WordPress, mais intuitivo.
 
-<br>
+---
 
 ## 📁 Ulitizando o tema
 Para utilizar o tema basta clonar este repositório, colocar os arquivos em uma pasta e colar essa pasta em Themes no WordPress.
@@ -56,9 +55,9 @@ $ git clone https://github.com/FernandNsp/Site-com-Wordpress.git
 ```
 O código é aberto, portanto sinta-se livre para usá-lo!
 
-<br>
+---
 
 ## 📚 Referências
-- [Function Reference- PHP](https://codex.wordpress.org/Function_Reference)
-- [Theme Development - Wordpress](https://codex.wordpress.org/Theme_Development)
+- [Function Reference - PHP](https://codex.wordpress.org/Function_Reference)
 - [Field Types - CMB2](https://github.com/CMB2/CMB2/wiki/Field-Types)
+- [Theme Development - Wordpress](https://codex.wordpress.org/Theme_Development)
