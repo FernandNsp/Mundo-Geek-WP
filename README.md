@@ -11,7 +11,13 @@ Para acessar o **projeto**, apenas para visualização antes das alterações co
 # 📌 Indice
 - [Sobre](#-Sobre)
 - [Tecnologias untilizadas](#-Tecnologias-untilizadas)
+   - [Desenvolvimento Web](#-Desenvolvimento-Web)
+   - [Linguagens de Programação](Linguagens-de-Programação)
+- [Pluguins WordPress](#-Pluguins-WordPress)
 - [Ulitizando o tema](#-Ulitizando-o-tema)
+- [Referências](#-Referências)
+
+---
 
 ## 🔖 Sobre
 
@@ -19,29 +25,40 @@ O projeto <strong>Mundo Geek</strong> foi desenvolvido para conclusão da capaci
 
 Na capacitação de WordPress utilizamos esse mesmo projeto, adaptado como tema, para que o site pudesse, de forma dinâmica, ter mudanças sem a necessidade da utilização de códigos, mudando tudo no painel do Wordpress.
 
----
+<br>
 
 ## 🚀 Tecnologias utilizadas
+### 👩‍💻 Desenvolvimento web
 - HTML
 - CSS
-- JavaScript
 - Bootstrap
 - WordPress
-- Xampp
+- Xampp (localhost)
 
----
+### 👩‍💻 Linguagens de programação
+- Git
+- PHP
+- JavaScript
+
+<br>
 
 ## 🔌 Plugins WordPress
 - CMB2: Utilizado para adicionar campos personalizados, usando functions.php para criar esses campos e adicioná-los ao WordPress.
 - Disable Gutenberg: Restaurar o editor clássico do WordPress, mais intuitivo.
 
----
+<br>
 
 ## 📁 Ulitizando o tema
 Para utilizar o tema basta clonar este repositório, colocar os arquivos em uma pasta e colar essa pasta em Themes no WordPress.
-
 
 ```bash
 $ git clone https://github.com/FernandNsp/Site-com-Wordpress.git
 ```
 O código é aberto, portanto sinta-se livre para usá-lo!
+
+<br>
+
+## 📚 Referências
+- [Function Reference- PHP](https://codex.wordpress.org/Function_Reference)
+- [Theme Development - Wordpress](https://codex.wordpress.org/Theme_Development)
+- [Field Types - CMB2](https://github.com/CMB2/CMB2/wiki/Field-Types)
